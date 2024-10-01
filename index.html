@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EMİRHAN YILMAZKOL'UN SİTESİ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      user-select: none;
+    }
+    nav {
+      background-color: #003366;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 10px 0;
+      transition: transform 0.3s;
+    }
+    nav.hide {
+      transform: translateY(-100%);
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    section {
+      padding-top: 70px;
+    }
+  </style>
+</head>
+
+<body>
+<nav id="navbar">
+  <ul>
+    <li><a href="https://www.instagram.com/emirhan.yll/" target="_blank">İnstagram'dan Ulaş</a></li>
+    <li><a href="https://github.com/EmirhanYilmazkol" target="_blank">GitHub'ıma Ulaş</a></li>
+    <li><a href="https://discord.gg/4pmTtu75" target="_blank">Discord Sunucuma Katıl</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h1>EMİRHAN NELERLE UĞRAŞIR?</h1>
+  <p>Emirhan; basketbol, futbol, tenis, badminton sporları ile ilgilenmektedir. Yazılım kısmında veritabanı alanında kendini geliştirmekle uğraşmaktadır. FPS oyunlarıyla da ilgilenmektedir.</p>
+
+  <h1>EMİRHAN BU GÜNE KADAR NELER YAPTI?</h1>
+  <p>Emirhan; lise 1-lise 4 arası zaman diliminde profesyonel olarak basketbol ile uğraşmaktaydı. Üniversitede geçen 3 senelik zaman diliminde ise veritabanı kısmında kendini geliştirmektedir.</p>
+
+  <h1>EMİRHAN'IN HEDEFLERİ NELER?</h1>
+  <p>Emirhan; veritabanı kısmından ilerlemek, Python dilinde kendini geliştirmek ve üniversitede öğretim görevlisi olmayı düşünmektedir. Ayrıca basketbolu da hobi olarak devam ettirmek, basketbolun içinde yer almak istemektedir.</p>
+
+  <h1>EMİRHAN'IN SPOR KARİYERİ NASIL?</h1>
+  <p>Emirhan; ortaokul sonuncu sınıfta, beden eğitimi hocasının keşfetmesi sonucu basketbola başladı. Lisede özel okuldan sporcu bursu kazanarak burslu olarak okudu. Ayrıca Afyon Belediyespor Basketbol takımında BGL'de oynadı. 2 senelik BGL kariyeri sonrasında basketbolu sakatlık dolayısıyla bıraktı ve bilgisayar mühendisi olma yolunda ilerlemektedir.</p>
+
+  <h2>EMİRHAN'IN BASKETBOL MAÇI</h2>
+  <img src="foto.jpeg" alt="LİSE1 FİNAL MAÇI" max-width:100%; height:auto;>
+
+  <h2>EMİRHAN'IN TANITIM VİDEOSU</h2>
+  <video width="1250" height="320" controls>
+    <source src="tanıtımVideo.mp4" type="video/mp4">
+  </video>
+</section>
+
+<footer>
+  <p>&copy; Emirhan Yılmazkol</p>
+  <p>&copy; 2221032062</p>
+</footer>
+
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      navbar.classList.add('hide');
+    } else {
+      navbar.classList.remove('hide');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+</script>
+</body>
+</html>
