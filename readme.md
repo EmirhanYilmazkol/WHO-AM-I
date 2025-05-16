@@ -4,7 +4,7 @@ Emirhan kimdir,nelerle uğraşır,bu güne kadar neler yaptı?
 
 ## Başlangıç
 
-https://emirhanyilmazkol.github.io/emirhanyilmazkol.github.io/
+https://emirhanyilmazkol.github.io/WHO-AM-I
 
 ### Gereksinimler
 
@@ -12,7 +12,7 @@ https://emirhanyilmazkol.github.io/emirhanyilmazkol.github.io/
 
 ### Kurulum
 
- git clone https://github.com/EmirhanYilmazkol/emirhanyilmazkol.github.io
+ git clone https://github.com/EmirhanYilmazkol/WHO-AM-I
 
  cd emirhany-lmazkol.github.io
 
